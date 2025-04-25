@@ -1,0 +1,17 @@
+version: "3"
+services:
+  web:
+    build: ./web
+    ports:
+      - "80:80"
+      - "8000"
+    environment:
+      BASE_URL: http://0.0.0.0
+      BOT_URL: http://0.0.0.0:8000
+  
+  bot:
+    build: ./bot
+    environment:
+      FLAG: fake{flag}
+      BASE_URL: http://0.0.0.0
+    network_mode: service:web

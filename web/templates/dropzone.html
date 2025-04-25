@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload memes</title>
+<link rel="stylesheet" href="../static/css/style_upload.css">
+</head>
+<body>
+  <div class="upload-box">
+    <h1>Upload memes</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <button type="submit">Upload</button>
+    </form>
+<br><br>
+    {% if filename %}
+    <div class="message">
+      ✅ Meme <a href="/uploads/{{filename}}">{{ filename }}</a> uploaded and sent to admin!
+    </div>
+  {% endif %}
+
+  </div>
+
+ 
+  
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background: #101010;
+    color: #eee;
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #444;
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+    color: #f9f9f9;
+  }
+
+  header p {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+  }
+
+  nav a {
+    color: #79e7ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #111;
+    color: #ddd;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-family: monospace;
+    width: 300px; /* fixed width for card layout symmetry */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    height:100%;
+  }
+  
+  .card h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #00ffd5;
+  }
+  
+  .card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #333;
+    color: #777;
+    font-size: 0.85rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }

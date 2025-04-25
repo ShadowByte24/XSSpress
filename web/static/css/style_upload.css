@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload-box {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #ff4d6d;
+    margin-bottom: 1.5rem;
+  }
+  
+  input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px dashed #a0c4ff;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="file"]:hover {
+    border-color: #4dabf7;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    background: #4dabf7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #339af0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .message a {
+    color: #2563eb; /* Tailwind blue-600 */
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid #93c5fd; /* soft underline effect */
+    transition: all 0.2s ease;
+  }
+  
+  .message a:hover {
+    color: #1e3a8a; /* darker on hover */
+    border-bottom-color: #60a5fa;
+  }
+  

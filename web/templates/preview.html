@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style_preview.css">
+</head>
+<body>
+<div class="card">
+
+    <h1>Welcome to the PreviewPage!</h1>
+<h2>Write your content and preview it yourself before sending to admin</h2>
+<form action="/preview" method="post">
+    <textarea name="content_preview" id="content_preview" cols="50" rows="5" placeholder="Your content here..."></textarea><br>
+    <button type="submit">Preview</button>
+</form>
+<hr>
+<h3>Output:</h3>
+<div id="output">
+    {{contentTodisplay}}
+</div>
+
+</div>
+</body>
+</html>
